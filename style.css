@@ -1,0 +1,119 @@
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f7fa;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 容器设计 */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  background: #ffffff;
+  padding: 4rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1a1a1b;
+  margin-bottom: 3rem;
+  letter-spacing: -0.5px;
+}
+
+.search-box {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.6rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  color: #333;
+}
+
+#searchInput:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 12px rgba(74, 144, 226, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Results container */
+.results {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+/* No results message */
+.no-results {
+  padding: 1.2rem 1.6rem;
+  color: #888;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* Results list */
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 32rem;
+  overflow-y: auto;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual result item */
+.result-item {
+  padding: 1rem 1.6rem;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  cursor: pointer;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-1px);
+}
+
+/* Result link */
+.result-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.result-link:hover {
+  color: #007bff;
+}
+
+/* Highlighted word in results */
+.result-word {
+  font-weight: 600;
+  color: #1a1a1b;
+}
