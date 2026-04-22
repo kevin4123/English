@@ -13,3 +13,6 @@ https://www.tiktok.com/oembed?url=<video_link>
 ### Copy Video Link
 Windows / Linux：Shift + Alt + → 
 macOS：Shift + Ctrl + →
+
+## git
+git add . && git commit -m "wip" && git pushs
