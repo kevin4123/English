@@ -15,4 +15,4 @@ Windows / Linux：Shift + Alt + →
 macOS：Shift + Ctrl + →
 
 ## git
-git add . && git commit -m "wip" && git pushs
+git add . && git commit -m "wip" && git push
